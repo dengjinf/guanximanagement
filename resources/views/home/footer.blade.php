@@ -41,6 +41,13 @@
             </div>
         </div>
         <div class="copyright">Copyright: XX Co., Ltd</div>
+        <ul class="country-flag">
+            <li><img src="{{asset('index')}}/images/zhongguo.png" alt=""></li>
+            <li><img src="{{asset('index')}}/images/ketediwa.png" alt=""></li>
+            <li><img src="{{asset('index')}}/images/beining.png" alt=""></li>
+            <li><img src="{{asset('index')}}/images/saineijiaer.png" alt=""></li>
+            <li><img src="{{asset('index')}}/images/nirier.png" alt=""></li>
+        </ul>
     </div>
 </div>
 

@@ -267,6 +267,20 @@ a{
     bottom: 1%;
     cursor: pointer;
 }
+.footer-content .country-flag{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 14px;
+    text-align: center;
+}
+.footer-content .country-flag li{
+    margin-right: 20px;
+}
+.footer-content .country-flag li:last-child{
+    margin-right: 0;
+}
+
 @media screen and (max-width: 768px) {
     .footer{
         height: 100%;
@@ -297,7 +311,6 @@ a{
     .footer-content .copyright{
         font-size: 12px;
         margin-top: 10px;
-        padding-bottom: 10px;
     }
     .footer-content .message-box{
         height: 300px;
@@ -309,6 +322,10 @@ a{
     }
     .footer-content .message-box .skip .narrow{
         right: 42%;
+    }
+    .footer-content .country-flag{
+        margin-top: 4px;
+        padding-bottom: 10px;
     }
 }
 
