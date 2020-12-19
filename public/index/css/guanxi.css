@@ -68,7 +68,6 @@ a{
     height: 100%;
     line-height: 106px;
     position: relative;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
