@@ -58,6 +58,16 @@
                 <img src="storage/{{ $small_banner['image'] }}" alt="">
             @endif
             <div class="content container">
+                @if( isset($part4) )
+                <div class="brief">
+                    @foreach( $part4 as $value )
+                    <div class="brief-item">
+                        <h4><span>{{ $value['front_title'] }}</span> <span class="after-title">{{ $value['after_title'] }}</span></h4>
+                        {!! $value['text'] !!}
+                    </div>
+                    @endforeach
+                </div>
+                @endif
                 <div class="row">
                     <div class="row-item">
                         <i class="fa fa-folder fa-5x  icon-round  faa-ring animated"></i>

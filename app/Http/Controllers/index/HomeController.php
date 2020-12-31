@@ -51,7 +51,16 @@ class HomeController extends Controller
                 }
                 $value['text']  = $text;
             }
-            $data[$value['part']] = $value;
+
+            if ($value['part'] == 'part4'){
+                $title = explode(' ',$value['title']);
+                $value['front_title'] = $title[0];
+                $value['after_title'] = $title[1];
+                $data[$value['part']][] = $value;
+            }else{
+                $data[$value['part']] = $value;
+            }
+
         }
 
         return view('home.home',$data);

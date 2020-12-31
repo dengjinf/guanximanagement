@@ -340,6 +340,28 @@ a{
     margin-top: 40px;
     text-align: center;
 }
+.home-container .content .brief{
+    overflow: hidden;
+    margin-bottom: 40px;
+    display: flex;
+}
+.home-container .content .brief .brief-item{
+    float: left;
+    width: 20%;
+    text-align: left;
+    margin: 0 auto;
+}
+.home-container .content .brief .brief-item h4{
+    font-style: italic;
+    margin: 18px 0 40px 0;
+}
+.home-container .content .brief .brief-item p{
+    font-size: 14px;
+    color: #43474d;
+}
+.home-container .content .brief .brief-item .after-title{
+    color: #d30100;
+}
 .home-container .content .row{
     overflow: hidden;
     height: 320px;
