@@ -19,13 +19,9 @@ class HomeController extends Controller
             $homeData = Home::get(['part','title_fr as title','description_fr as description','content_fr as content','image_fr as image','hoverText_fr as hoverText','created_at'])->toArray();
             $caseData = ProjectCase::get(['image_fr as image','content_fr as content','created_at'])->toArray();
         }
-
         $data = array();
         foreach($homeData as $key => $value){
-            if ($value['part'] == 'banner'){
-                $data[$value['part']] = $value;
-                continue;
-            }else if($value['part'] == 'small_banner'){
+            if($value['part'] == 'small_banner'){
                 $data[$value['part']] = $value;
                 continue;
             }else if($value['part'] == 'part2'){
@@ -49,6 +45,9 @@ class HomeController extends Controller
                     $title = explode('|',$value['hoverText']);
                     $value['hoverText'] = $title;
                 }
+                if ($bannerText = explode('|',$value['description'])){
+                    $value['bannerText'] = $bannerText;
+                }
                 $value['text']  = $text;
             }
 
@@ -62,7 +61,7 @@ class HomeController extends Controller
             }
 
         }
-
+//        dump($data);
         return view('home.home',$data);
     }
 

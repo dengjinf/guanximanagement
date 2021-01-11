@@ -229,6 +229,7 @@ a{
     right: 1%;
     width: 240px;
     height: 350px;
+    z-index: 99;
 }
 .footer-content .message-box .skip{
     height: 100%;
@@ -335,6 +336,22 @@ a{
     position: relative;
     width: 100%;
     margin-top: 106px;
+}
+.home-container .banner .swiper-wrapper{
+    margin-left: 0;
+}
+.home-container .banner .swiper-wrapper .swiper-slide img{
+    width: 100%;
+}
+.home-container .banner .swiper-wrapper .swiper-slide h2{
+    position: absolute;
+    top: 70%;
+    width: 50%;
+    text-align: center;
+    left: 26%;
+    color: #dc2b2b;
+    opacity: 0.9;
+    font-size: 40px;
 }
 .home-container .content{
     margin-top: 40px;
@@ -542,6 +559,25 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+    .home-container .banner .swiper-wrapper .swiper-slide h2{
+        top: 62%;
+        width: 80%;
+        left: 9%;
+        font-size: 16px;
+    }
+    .home-container .content .brief{
+        display: block;
+    }
+    .home-container .content .brief .brief-item{
+        width: 50%;
+    }
+    .home-container .content .brief .brief-item h4{
+        margin: 18px 0 6px 0;
+        font-size: 14px;
+    }
+    .home-container .content .brief .brief-item p{
+        font-size: 12px;
+    }
     .home-container .content{
         margin-top: 0;
         padding: 0 2%;

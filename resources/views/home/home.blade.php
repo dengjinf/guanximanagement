@@ -19,6 +19,7 @@
                 opacity: 1;
                 top: 8%;
                 background-size: 60px;
+                z-index: 999;
             }
             .swiper-container .swiper-button-prev{
                 background-image: url({{ asset('index') }}/images/prev.jpg);
@@ -51,9 +52,22 @@
 
         {{--    首页内容    --}}
         <div class="home-container">
-            @if( isset($banner['image']) )
-                <img src="storage/{{ $banner['image'] }}" alt="">
-            @endif
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        @foreach( $banner['content_image'] as $k=>$banner_img )
+                            <div class="swiper-slide">
+                                <img src="{{$banner_img}}" alt="">
+                                <h2 style="">{{$banner['bannerText'][$k]}}</h2>
+                            </div>
+                        @endforeach
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next" style="background-image: url({{ asset('index') }}/images/fanye.png);"></div>
+                    <div class="swiper-button-prev" style="background-image: url({{ asset('index') }}/images/fanye_1.png);"></div>
+                </div>
+
+            </div>
             @if( isset($small_banner['image']) )
                 <img src="storage/{{ $small_banner['image'] }}" alt="">
             @endif
@@ -181,7 +195,7 @@
             pagination: {
                 el: '.swiper-pagination'
             },
-            mousewheel: true,
+            // mousewheel: true,
             keyboard: true,
         });
     </script>
