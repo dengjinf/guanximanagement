@@ -370,6 +370,7 @@ a{
 }
 .home-container .content .brief .brief-item h4{
     font-style: italic;
+    cursor: pointer;
     margin: 18px 0 40px 0;
 }
 .home-container .content .brief .brief-item p{

@@ -77,7 +77,7 @@
                     @foreach( $part4 as $value )
                     <div class="brief-item">
                         <h4><span>{{ $value['front_title'] }}</span> <span class="after-title">{{ $value['after_title'] }}</span></h4>
-                        {!! $value['text'] !!}
+                        <div style="display: none;">{!! $value['text'] !!}</div>
                     </div>
                     @endforeach
                 </div>
@@ -202,5 +202,14 @@
                 disableOnInteraction: false
             },
         });
+    </script>
+    <script>
+        $(".brief-item h4").hover(function(){
+            $(this).siblings("div").fadeIn()
+        }
+        ,function(){
+            $(this).siblings("div").fadeOut()
+        }
+        )
     </script>
 </html>
