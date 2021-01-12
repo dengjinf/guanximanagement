@@ -561,10 +561,10 @@ a{
 
 @media screen and (max-width: 768px) {
     .home-container .banner .swiper-wrapper .swiper-slide h2{
-        top: 62%;
+        top: 48%;
         width: 80%;
         left: 9%;
-        font-size: 16px;
+        font-size: 14px;
     }
     .home-container .content .brief{
         display: block;
