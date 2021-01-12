@@ -197,6 +197,10 @@
             },
             // mousewheel: true,
             keyboard: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
         });
     </script>
 </html>
