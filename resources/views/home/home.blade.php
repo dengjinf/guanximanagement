@@ -69,15 +69,21 @@
 
             </div>
             @if( isset($small_banner['image']) )
-                <img src="storage/{{ $small_banner['image'] }}" alt="">
+                <div class="click_item">
+                    <img src="storage/{{ $small_banner['image'] }}" alt="">
+                    <div class="click_items click-1"></div>
+                    <div class="click_items click-2"></div>
+                    <div class="click_items click-3"></div>
+                    <div class="click_items click-4"></div>
+                </div>
             @endif
             <div class="content container">
                 @if( isset($part4) )
                 <div class="brief">
                     @foreach( $part4 as $value )
                     <div class="brief-item">
-                        <h4><span>{{ $value['front_title'] }}</span> <span class="after-title">{{ $value['after_title'] }}</span></h4>
-                        <div style="display: none;">{!! $value['text'] !!}</div>
+{{--                        <h4><span>{{ $value['front_title'] }}</span> <span class="after-title">{{ $value['after_title'] }}</span></h4>--}}
+                        <div>{!! $value['text'] !!}</div>
                     </div>
                     @endforeach
                 </div>
@@ -215,6 +221,11 @@
                 }
             )
         }
-
+        $(".brief-item").hide()
+        $(".click_item .click_items").click(function(){
+            var index = $(this).index();
+            console.log(index)
+            $(".brief-item").eq(index-1).fadeToggle().siblings().hide();
+        })
     </script>
 </html>
