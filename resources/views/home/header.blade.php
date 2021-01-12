@@ -51,7 +51,7 @@
 
         if (navigator.userAgent.match(/IEMobile|BlackBerry|Android|iPod|iPhone|iPad/i)) {
             @if(Session::get('locale')=='fr')
-            $(".nav li").css('height','38px')
+            // $(".nav li").css('height','38px')
             @endif
         }
     });

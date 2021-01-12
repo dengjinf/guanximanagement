@@ -61,7 +61,7 @@ class HomeController extends Controller
             }
 
         }
-//        dump($data);
+
         return view('home.home',$data);
     }
 
