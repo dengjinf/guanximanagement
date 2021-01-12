@@ -571,6 +571,7 @@ a{
     }
     .home-container .content .brief .brief-item{
         width: 50%;
+        min-height: 334px;
     }
     .home-container .content .brief .brief-item h4{
         margin: 18px 0 6px 0;
@@ -578,6 +579,9 @@ a{
     }
     .home-container .content .brief .brief-item p{
         font-size: 12px;
+    }
+    .home-container .content .brief .brief-item p span{
+        font-size: 12px !important;
     }
     .home-container .content{
         margin-top: 0;

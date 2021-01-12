@@ -204,12 +204,17 @@
         });
     </script>
     <script>
-        $(".brief-item h4").hover(function(){
-            $(this).siblings("div").fadeIn()
+        if ((navigator.userAgent.match(/(iPhone|baiiPod|Android|ios|iOS|iPad|Backerry|WebOS|Symbian|Windows Phone|Phone)/i))) {
+            $(".brief-item div").show()
+        }else{
+            $(".brief-item h4").hover(function(){
+                    $(this).siblings("div").fadeIn()
+                }
+                ,function(){
+                    $(this).siblings("div").fadeOut()
+                }
+            )
         }
-        ,function(){
-            $(this).siblings("div").fadeOut()
-        }
-        )
+
     </script>
 </html>
