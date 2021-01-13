@@ -135,7 +135,8 @@ return [
     */
 
     'providers' => [
-
+        App\Providers\AgentServiceProvider::class,
+        Jenssegers\Agent\AgentServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -190,6 +191,7 @@ return [
 
     'aliases' => [
 
+        'Agent' => Jenssegers\Agent\Facades\Agent::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,

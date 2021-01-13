@@ -12,7 +12,11 @@
     </head>
     <body>
         {{--    头部内容    --}}
-        @include('home.header')
+        @if ($agent->isMobile())
+            @include('home.m-header')
+        @else
+            @include('home.header')
+        @endif
 
         {{--    our service内容    --}}
         <div class="service-container">

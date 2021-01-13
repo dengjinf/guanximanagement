@@ -48,7 +48,11 @@
     </head>
     <body>
         {{--    头部内容    --}}
-        @include('home.header')
+        @if ($agent->isMobile())
+            @include('home.m-header')
+        @else
+            @include('home.header')
+        @endif
 
         {{--    首页内容    --}}
         <div class="home-container">
