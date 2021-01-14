@@ -239,25 +239,28 @@ a{
     background: #353535;
 }
 .footer-content{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .footer-content .title{
     font-size: 30px;
     font-style: oblique;
-    margin-bottom: 60px;
+    margin-bottom: 6px;
     color: #fff;
     text-align: center;
 }
 .footer-content .title span{
     color: #d40103;
 }
-.footer-content .items{
-    overflow: hidden;
+.footer-content .content-box{
     width: 1000px;
     margin: 0 auto;
-    font-size: 14px;
-    padding-bottom: 26px;
     border-bottom: 1px #fff solid;
+}
+.footer-content .items{
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 14px;
+    padding-bottom: 18px;
 }
 .footer-content .item{
     float: left;
@@ -313,8 +316,8 @@ a{
 }
 .footer-content .message-box .skip .narrow{
     position: absolute;
-    right: 46%;
-    bottom: 6%;
+    right: 44%;
+    bottom: 3%;
     cursor: pointer;
 }
 .footer-content .message-box .large{
@@ -336,26 +339,49 @@ a{
 .footer-content .country-flag li:last-child{
     margin-right: 0;
 }
+.footer-content .social{
+    margin-bottom: 10px;
+}
+.footer-content .social ul{
+    text-align: center;
+}
+.footer-content .social ul li{
+    display:inline
+}
+
 
 @media screen and (max-width: 768px) {
     .footer{
         height: 100%;
     }
     .footer-content{
-        padding-top: 20px;
+        padding-top: 12px;
     }
     .footer-content .title{
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-    .footer-content .items{
+    .footer-content .content-box{
         width: 100%;
         font-size: 12px;
+    }
+    .footer-content .items{
+        font-size: 12px;
+        padding-bottom: 0;
     }
     .footer-content .item{
         display: flex;
         width: 100%;
+        height: 64px;
         padding: 0 6%;
+        margin-bottom: 4px;
+    }
+    .footer-content .item .address{
+        padding: 0 8%;
+    }
+    .footer-content .item img{
+        width: 36px;
+        height: 36px;
     }
     .footer-content .item .phone{
         padding: 0 14%;
@@ -364,14 +390,21 @@ a{
         margin: 0 auto;
         display:table-cell; vertical-align:middle;
     }
+    .footer-content .social{
+        margin-bottom: 4px;
+    }
     .footer-content .copyright{
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 2px;
     }
     .footer-content .message-box{
         height: 300px;
         width: 50%;
         bottom: 12%;
+    }
+    .footer-content .message-box .large img{
+        width: 36px;
+        height: 36px;
     }
     .footer-content .message-box .skip .contact-img{
         margin: 36px 0;

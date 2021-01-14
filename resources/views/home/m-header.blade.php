@@ -8,14 +8,14 @@
             <li class="dropdown"><a href="/" class="nav">{{trans('message.home')}}</a></li>
             <li class="dropdown">
                 <a href="/about" class="nav">{{trans('message.about_us')}}</a>
-                <img class="down-mark" src="{{ asset('index') }}/images/down.png" alt="" style="position: absolute;right: 0;">
+{{--                <img class="down-mark" src="{{ asset('index') }}/images/down.png" alt="" style="position: absolute;right: 0;">--}}
                 <ul class="dropdown-menu">
                     <li><a href="/about-company">{{ trans('message.about_company') }}</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="/service" class="nav">{{trans('message.our_service')}}</a>
-                <img class="down-mark" src="{{ asset('index') }}/images/down.png" alt="" style="position: absolute;right: 0;">
+{{--                <img class="down-mark" src="{{ asset('index') }}/images/down.png" alt="" style="position: absolute;right: 0;">--}}
                 <ul class="dropdown-menu" style="display: block;">
                     <li><a href="/service-sourcing">{{ trans('message.service_sourcing') }}</a></li>
                     <li><a href="/service-conseil">{{ trans('message.service_conseil') }}</a></li>
@@ -49,9 +49,9 @@
         });
 
         $(".dropdown-menu").hide();
-        $(".down-mark").click(function () {
-            $(this).siblings('.dropdown-menu').stop().fadeToggle();
-        })
+        // $(".down-mark").click(function () {
+        //     $(this).siblings('.dropdown-menu').stop().fadeToggle();
+        // })
 
         $('.nav').hide();
         $('#menu').click(function(){

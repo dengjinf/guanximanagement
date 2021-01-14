@@ -3,8 +3,8 @@
         <div class="message-box">
             <div class="skip">
                 <div class="contact-logo"><img src="{{ asset('index') }}/images/logo.jpg" alt=""></div>
-                <div class="contact-img"><a href="/contact#dituContent"><img src="{{ asset('index') }}/images/contact.png" alt=""></a></div>
-                <div class="contact-text"><a href="/contact#dituContent">{{trans('message.message_box_contact')}}</a></div>
+                <div class="contact-img"><a href="https://www.facebook.com/16china/" target="_blank;"><img src="{{ asset('index') }}/images/contact.png" alt=""></a></div>
+                <div class="contact-text"><a href="https://www.facebook.com/16china/" target="_blank;">{{trans('message.message_box_contact')}}</a></div>
                 <div class="narrow">
                     <img src="{{ asset('index') }}/images/close.png" alt="">
                 </div>
@@ -16,30 +16,51 @@
                 CONTACT <span>US</span>
             @elseif ( Session::get('locale') == 'fr' )
                 CONTACTEZ - <span>NOUS</span>
+            @else
+                CONTACTEZ - <span>NOUS</span>
             @endif
         </div>
-        <div class="items">
-            <div class="item">
-                <img src="{{ asset('index') }}/images/footer-1.jpg" alt="">
-                <div class="address">
-                    <p>{{ trans('message.china') }}: 11 Floor, Jian She Liu Rd, Guangzhou, 510060, PR China /</p>
-                    <p>COTE D'IVOIRE : Abidjan, Plateau Bd. Angoulvant</p>
+        <div class="content-box">
+            <div class="items">
+                <div class="item">
+                    <img src="{{ asset('index') }}/images/footer-1.jpg" alt="">
+                    <div class="address">
+                        <p>{{ trans('message.china') }}: 11 Floor, Jian She Liu Rd, Guangzhou, 510060, PR China /</p>
+                        <p>COTE D'IVOIRE : Abidjan, Plateau Bd. Angoulvant</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('index') }}/images/footer-2.jpg" alt="">
+                    <div class="phone">
+                        <p>(+225) 08 63 10 20 – 89 05 21 98 - 85 36 34 54 /</p>
+                        <p>(+86) 131 673 712 33</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('index') }}/images/footer-3.jpg" alt="">
+                    <div class="email">
+                        <p>info@guanxi-management.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="{{ asset('index') }}/images/footer-2.jpg" alt="">
-                <div class="phone">
-                    <p>(+225) 08 63 10 20 – 89 05 21 98 - 85 36 34 54 /</p>
-                    <p>(+86) 131 673 712 33</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="{{ asset('index') }}/images/footer-3.jpg" alt="">
-                <div class="email">
-                    <p>info@guanxi-management.com</p>
-                </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/16china/" target="_blank;"><img src="{{asset('index')}}/images/Facebook.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/company/guanximanagement" target="_blank;"><img src="{{asset('index')}}/images/linkedin.png" alt=""></a></li>
+                    <li><a href="https://chat.whatsapp.com/KLCFAq0pfQm1wAvBacQjIG" target="_blank;"><img src="{{asset('index')}}/images/whatsapp.png" alt=""></a></li>
+                    <li><a href="https://www.guanxi-mall.com/index.php?route=information/contact" target="_blank;"><img src="{{asset('index')}}/images/wechat.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
+
+{{--        <div class="social">--}}
+{{--            <ul>--}}
+{{--                <li><a href=""><img src="{{asset('index')}}/images/Facebook.png" alt=""></a></li>--}}
+{{--                <li><a href=""><img src="{{asset('index')}}/images/linkedin.png" alt=""></a></li>--}}
+{{--                <li><a href=""><img src="{{asset('index')}}/images/whatsapp.png" alt=""></a></li>--}}
+{{--                <li><a href=""><img src="{{asset('index')}}/images/wechat.png" alt=""></a></li>--}}
+{{--            </ul>--}}
+{{--        </div>--}}
         <div class="copyright">Copyright: XX Co., Ltd</div>
         <ul class="country-flag">
             <li><img src="{{asset('index')}}/images/zhongguo.png" alt=""></li>
