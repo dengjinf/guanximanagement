@@ -52,15 +52,6 @@
                 </ul>
             </div>
         </div>
-
-{{--        <div class="social">--}}
-{{--            <ul>--}}
-{{--                <li><a href=""><img src="{{asset('index')}}/images/Facebook.png" alt=""></a></li>--}}
-{{--                <li><a href=""><img src="{{asset('index')}}/images/linkedin.png" alt=""></a></li>--}}
-{{--                <li><a href=""><img src="{{asset('index')}}/images/whatsapp.png" alt=""></a></li>--}}
-{{--                <li><a href=""><img src="{{asset('index')}}/images/wechat.png" alt=""></a></li>--}}
-{{--            </ul>--}}
-{{--        </div>--}}
         <div class="copyright">Copyright: XX Co., Ltd</div>
         <ul class="country-flag">
             <li><img src="{{asset('index')}}/images/zhongguo.png" alt=""></li>
